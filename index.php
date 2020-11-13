@@ -156,7 +156,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
 		</div>	
 	<div class="footer">
-		<h6>Disclaimer : </h6>
+
+        <h6>Disclaimer : Webies © 2020</h6>
+		<h6>Disclaimer : Webies © <?php echo "2020"; ?> </h6>
+        <h6>Disclaimer : Webies © <?= "2020"; ?> </h6>
+        <h6>Disclaimer : Webies © <?= date('Y') ?> </h6>
+
 		<p class="claim">This is a freebies and not an official website, I have no intention of disclose any movie, brand, news.My goal here is to train or excercise my skill and share this freebies.</p>
 		<a href="example@mail.com">example@mail.com</a>
 		<div class="copyright">
