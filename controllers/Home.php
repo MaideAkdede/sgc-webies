@@ -3,10 +3,17 @@
 class Home
 {
     public $header;
+    public $links;
+
     public function __construct($header)
     {
         // récupérer les modèles utiles
-        $this->header = $header;
+       /* $this->header = $header;*/
+
+        //méthode static elle sappele sans que l'objet existe
+        //on lappel dans le vide
+
+        $this->links = NavigationLink::getAllDisplayed();
     }
     public function render()
     {

@@ -2,17 +2,24 @@
 
 abstract class Model
 {
-    public function fetch($sql, $attributes = [])
+    static public function fetch($sql, $attributes = [])
     {
-        $query = $this->connexion();
+        //$query = $this->connexion();
     }
 
-    public function fetchAll($sql, $attributes = [])
+    static public function fetchAll($sql, $attributes = [])
     {
-        $query = $this->connexion();
+        //PDO connexion avec base de données
+        $pdo = static::connexion();
+        //préparer requete sql pour qu'elle puisse être utilisé
+        $query = $pdo->prepare($sql);
+        // excécuter
+        $query->execute($attributes);
+        //afficher résultat
+        return $query->fetchAll();
     }
 
-    protected function connexion()
+    static protected function connexion()
     {
         // CONFIGURER PDO
         $charset = 'utf8mb4';
