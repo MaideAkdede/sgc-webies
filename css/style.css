@@ -390,7 +390,7 @@ i.contact1 {
 	position: relative;
 	line-height: 0px;
 }
-.nbs-flexisel-item > img {
+.nbs-flexisel-item > a > img {
 	
 	cursor: pointer;
 	position: relative;
@@ -1566,7 +1566,7 @@ font-weight: 700;
 	.review-slider {
 		padding: 1.5em 0;
 	}
-	.nbs-flexisel-item > img {
+	.nbs-flexisel-item > a > img {
 		width: 94%;
 		margin: 0 3%;
 	}

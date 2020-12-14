@@ -33,7 +33,6 @@ class Movie extends Model
         $this->rating = $data['rating'];
         $this->producers = $data['producers'];
         $this->genres = $data['genres'];
-
     }
 
     static public function getFeatured()

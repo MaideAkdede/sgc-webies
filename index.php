@@ -8,6 +8,7 @@ require_once('models/NavigationLink.php');
 require_once('models/Movie.php');
 require_once('models/Producer.php');
 require_once('models/Genre.php');
+require_once('models/NewReleases.php');
 
 
 require_once('controllers/Home.php');

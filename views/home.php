@@ -86,12 +86,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="review-slider">
             <ul id="flexiselDemo1">
-                <li><img src="images/r1.jpg" alt=""/></li>
-                <li><img src="images/r2.jpg" alt=""/></li>
-                <li><img src="images/r3.jpg" alt=""/></li>
-                <li><img src="images/r4.jpg" alt=""/></li>
-                <li><img src="images/r5.jpg" alt=""/></li>
-                <li><img src="images/r6.jpg" alt=""/></li>
+                <?php foreach($newReleases as $oneRelease):?>
+                    <li>
+                        <a href="<?= $oneRelease->slug; ?>">
+                            <img src="<?= $oneRelease->cover_img; ?>"
+                                 alt="<?= $oneRelease->cover_alt; ?>">
+                        </a>
+
+                    </li>
+                <?php endforeach;?>
             </ul>
             <script type="text/javascript">
                 $(window).load(function() {
