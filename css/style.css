@@ -75,8 +75,6 @@ p.age {
 	color:#f4f4f4;
 	font-size:1.15em;
 	font-weight:400;
-	margin:1.5em 0;
-	margin-bottom: 2.5em;
 }
 p.special {
 	color:#f4f4f4;
@@ -85,10 +83,24 @@ p.special {
 	line-height:1.7em;
 	margin:2.2em 0;
 }
-p.age a {
-	color:#3bd369;
-	padding:7px 10px;
+p.age.age--green a {
+	color: #3bd369;
 	border:2px solid #3bd369;
+}
+p.age.age--red a {
+	color: red;
+	border:2px solid red;
+}
+p.age.age--blue a {
+	color: blue;
+	border:2px solid blue;
+}
+p.age.age--blue a {
+	color: orange;
+	border:2px solid orange;
+}
+p.age a {
+	padding:7px 10px;
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -867,7 +879,70 @@ a.b-home:hover{
 	width:100%;
 	min-height:350px;
 }
-/*----*/
+/* REVIEW DEFINITION DL DT DD*/
+.featured-definition{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	color: white;
+}
+.featured-definition dt {
+	display: block;
+	width: 80px;
+	font-weight: bold;
+}
+.featured-definition dt:after{
+	content: ':';
+	display: inline;
+}
+.featured-definition dd {
+	display: block;
+	width: calc(100% - 80px);
+}
+.featured-definition ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+.featured-definition li {
+	display: inline;
+}
+.featured-definition li:after {
+	content: ', ';
+	display: inline;
+}
+.featured-definition li:last-child:after {
+	display: none;
+}
+.featured-definition a {
+	color: white;
+}
+/*-- Producers UL -- */
+.producers {
+	display: block;
+	list-style: none;
+	color: white;
+}
+.producers li {
+	display: inline;
+}
+.producers li:after {
+	content: ', ';
+	display: inline;
+}
+.producers li:last-child:after {
+	display: none;
+}
+/*-- FEATURED --*/
+.featured-info {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	margin:1.5em 0;
+	margin-bottom: 2.5em;
+}
 .featured ul li {
 	display: inline-block;
 	width: 28.333%;
